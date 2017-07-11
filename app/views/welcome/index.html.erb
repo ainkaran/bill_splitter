@@ -1,0 +1,32 @@
+<h1>splitter</h1>
+<div>
+  <%= form_tag home_path do %>
+  <%= label_tag :amount %>
+  <%= text_field_tag :amount %>
+
+</div>
+
+<div>
+
+  <%= label_tag :tax %>
+  <%= text_field_tag :tax %>
+
+</div>
+
+<div>
+
+  <%= label_tag :tip %>
+  <%= text_field_tag :tip %>
+</div>
+
+<div>
+
+  <%= label_tag :people %>
+  <%= text_field_tag :people %>
+</div>
+
+<%= submit_tag 'Submit' %>
+
+<h1>Every person must pay <%= @total %></h1>
+
+<% end %>
